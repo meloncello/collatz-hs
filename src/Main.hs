@@ -15,7 +15,7 @@ plotCollatzSequenceFrom n = do
   where
   graph = Data2D [ Color Blue
                  , Style Impulses]
-                 [Range 1 250]
+                 []
                  $ collatzGen n
 
 plotCollatzGraphOfSteps :: Integer -> IO ()
